@@ -1,1 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #39ff14; /* lime green */
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.btn {
+    background: #39ff14;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: red;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, black, #111);
+}
+
+.hero h2 {
+    color: #39ff14;
+    font-size: 40px;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 10px 0;
+    border-left: 5px solid #39ff14;
+}
+
+.price {
+    font-size: 24px;
+    color: #39ff14;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: gray;
+}
