@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Business</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #000;
+        border-bottom: 2px solid #39ff14;
+    }
+
+    .logo {
+        width: 120px;
+        height: 40px;
+        background: #000;
+        border: 1px solid #39ff14;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #39ff14;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        color: #39ff14;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #ccc;
+    }
+
+    .slogan {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 15px;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn-green {
+        background: #39ff14;
+        color: #000;
+    }
+
+    .btn-red {
+        background: red;
+        color: #fff;
+    }
+
+    .section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #111;
+        padding: 20px;
+        border: 1px solid #39ff14;
+    }
+
+    form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        margin: 8px 0;
+        padding: 10px;
+        background: #111;
+        border: 1px solid #39ff14;
+        color: white;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #39ff14;
+        background: #000;
+        margin-top: 40px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo"></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="btn btn-red">Call Now</button>
+</header>
+
+<section class="hero">
+    <h1>Fast & Reliable Vehicle Services</h1>
+    <p>We respond quickly and get the job done right the first time.</p>
+    <div class="slogan">“Clarity Restored, Safety Secured.”</div>
+
+    <div>
+        <button class="btn btn-green">Get a Quote</button>
+        <button class="btn btn-red">Request Help</button>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2 style="color:#39ff14;">Our Services</h2>
+
+    <div class="cards">
+        <div class="card">Vehicle Inspection</div>
+        <div class="card">Roadside Assistance</div>
+        <div class="card">Diagnostics</div>
+        <div class="card">Towing Support</div>
+        <div class="card">Repair Help</div>
+        <div class="card">Emergency Response</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 style="color:#39ff14;">What Customers Say</h2>
+
+    <p>★★★★★ “Fast response and very professional service.” (Sample)</p>
+    <p>★★★★★ “Everything was explained clearly and handled quickly.” (Sample)</p>
+    <p>★★★★★ “Stress-free experience from start to finish.” (Sample)</p>
+</section>
+
+<section id="contact" class="section">
+    <h2 style="color:#39ff14;">Request Service</h2>
+
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="tel" placeholder="Phone Number">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Vehicle Year">
+        <input type="text" placeholder="Vehicle Model">
+        <input type="text" placeholder="Zip Code">
+        <textarea placeholder="Message (optional)"></textarea>
+        <input type="file">
+        <button class="btn btn-green" type="submit">Submit Request</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Your Business Name — “Clarity Restored, Safety Secured.”</p>
+</footer>
+
+</body>
+</html>
