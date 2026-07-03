@@ -1,1 +1,30 @@
+:root{
 
+    /* Brand Colors */
+
+    --lime:#9DFF00;
+    --red:#FF2B2B;
+    --black:#050505;
+    --dark:#111111;
+    --white:#ffffff;
+    --gray:#A5A5A5;
+
+    /* Layout */
+
+    --container:1200px;
+
+    /* Border Radius */
+
+    --radius-sm:10px;
+    --radius-md:18px;
+    --radius-lg:28px;
+
+    /* Shadows */
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+    /* Animation */
+
+    --transition:.35s ease;
+
+}
