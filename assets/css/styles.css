@@ -1,1 +1,168 @@
+/* ==========================================
+   GADAL RESTORES
+   Premium Website
+========================================== */
 
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* COLOR VARIABLES */
+
+:root{
+
+    --lime:#9DFF00;
+
+    --red:#FF2B2B;
+
+    --black:#050505;
+
+    --dark:#111111;
+
+    --gray:#888888;
+
+    --white:#ffffff;
+
+    --container:1200px;
+
+}
+
+/* GLOBAL */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:var(--container);
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:100px 0;
+
+}
+
+h1{
+
+    font-size:4.5rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+p{
+
+    color:#c9c9c9;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+/* BUTTONS */
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 36px;
+
+    border-radius:999px;
+
+    transition:.35s;
+
+    font-weight:700;
+
+}
+
+.btn-primary{
+
+    background:var(--lime);
+
+    color:black;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 30px rgba(157,255,0,.35);
+
+}
+
+.btn-secondary{
+
+    border:2px solid white;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:black;
+
+}
