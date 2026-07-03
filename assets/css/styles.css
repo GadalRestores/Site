@@ -658,4 +658,36 @@ left:120%;
 
 animation:fadeUp 1.5s ease;
 
+}/* ==========================================
+STATEMENT SECTION
+========================================== */
+
+.statement{
+
+padding:40px 0;
+
+background:#0b0b0b;
+
+border-top:1px solid rgba(255,255,255,.05);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.statement p{
+
+font-size:1.25rem;
+
+text-align:center;
+
+font-weight:600;
+
+color:white;
+
+max-width:900px;
+
+margin:auto;
+
+line-height:1.8;
+
 }
