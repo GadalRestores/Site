@@ -1,4 +1,6 @@
-/* RESET */
+/* ==========================================
+   RESET
+========================================== */
 
 *{
     margin:0;
@@ -7,77 +9,106 @@
 }
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 body{
 
-    font-family:'Inter',sans-serif;
     background:var(--black);
+
     color:var(--white);
+
+    font-family:var(--body);
+
     overflow-x:hidden;
 
+    line-height:1.6;
+
 }
+
+/* ==========================================
+   IMAGES
+========================================== */
 
 img{
+
     max-width:100%;
+
     display:block;
+
 }
+
+/* ==========================================
+   LINKS
+========================================== */
 
 a{
-    text-decoration:none;
+
     color:inherit;
+
+    text-decoration:none;
+
 }
 
-ul{
-    list-style:none;
-}
+/* ==========================================
+   CONTAINER
+========================================== */
 
 .container{
 
-    width:min(92%, var(--container));
-    margin-inline:auto;
+    width:min(92%,var(--container));
+
+    margin:auto;
 
 }
+
+/* ==========================================
+   SECTIONS
+========================================== */
 
 section{
 
-    padding:110px 0;
+    position:relative;
 
 }
 
-h1{
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
 
-    font-size:clamp(3rem,7vw,5.5rem);
-    font-weight:900;
-    line-height:1.05;
+h1,h2,h3,h4{
 
-}
+    font-family:var(--heading);
 
-h2{
-
-    font-size:clamp(2.2rem,5vw,4rem);
-    margin-bottom:20px;
+    line-height:1.1;
 
 }
 
 p{
 
-    color:#D3D3D3;
-    font-size:1.1rem;
-    line-height:1.8;
+    color:var(--text-light);
 
 }
 
-/* Buttons */
+/* ==========================================
+   BUTTONS
+========================================== */
 
-.btn{
+.primary-btn{
 
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
 
-    padding:18px 38px;
+    padding:18px 34px;
+
+    background:var(--lime);
+
+    color:black;
 
     border-radius:999px;
 
@@ -87,30 +118,34 @@ p{
 
 }
 
-.btn-primary{
+.primary-btn:hover{
 
-    background:var(--lime);
-    color:#000;
-
-}
-
-.btn-primary:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:0 0 30px rgba(157,255,0,.4);
+    transform:translateY(-3px);
 
 }
 
-.btn-secondary{
+.secondary-btn{
 
-    border:2px solid white;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.20);
+
+    transition:var(--transition);
 
 }
 
-.btn-secondary:hover{
+.secondary-btn:hover{
 
     background:white;
+
     color:black;
 
 }

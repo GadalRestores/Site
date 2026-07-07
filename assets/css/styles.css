@@ -1,149 +1,23 @@
-/* =========================
-   BASE STYLES
-========================= */
+/*
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+======================================
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: #050505;
-    color: white;
-}
+GADAL RESTORES
 
-/* =========================
-   LAYOUT
-========================= */
+Master Stylesheet
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+======================================
 
-/* =========================
-   NAVIGATION
-========================= */
+*/
 
-.nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 0;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(12px);
-    z-index: 1000;
-}
+@import url("variables.css");
 
-.nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@import url("base.css");
 
-.logo {
-    font-weight: 800;
-    letter-spacing: 2px;
-}
+/* These files will be added next */
 
-.logo span {
-    color: #9DFF00;
-}
+@import url("navbar.css");
 
-.links {
-    display: flex;
-    gap: 25px;
-}
+@import url("hero.css");
 
-.links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.links a:hover {
-    color: #9DFF00;
-}
-
-.cta {
-    background: #9DFF00;
-    color: black;
-    padding: 12px 20px;
-    border-radius: 999px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.hero-video {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top right, rgba(157,255,0,0.15), transparent 40%),
-                radial-gradient(circle at bottom left, rgba(255,0,0,0.10), transparent 40%),
-                #050505;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.sub {
-    color: #9DFF00;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-    font-size: 12px;
-}
-
-h1 {
-    font-size: 60px;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.desc {
-    max-width: 600px;
-    color: #cfcfcf;
-    margin-bottom: 30px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn {
-    padding: 14px 24px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.primary {
-    background: #9DFF00;
-    color: black;
-}
-
-.secondary {
-    border: 2px solid white;
-    color: white;
-}
+@import url("responsive.css");
