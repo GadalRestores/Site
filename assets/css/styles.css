@@ -20,4 +20,6 @@ Master Stylesheet
 
 @import url("hero.css");
 
+@import url("gallery.css");
+
 @import url("responsive.css");
