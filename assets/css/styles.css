@@ -1,25 +1,28 @@
-/*
+/* ==========================================
+   GADAL RESTORES
+   MASTER STYLESHEET
+========================================== */
 
-======================================
+/* ---------- CORE ---------- */
 
-GADAL RESTORES
+@import url("core/variables.css");
+@import url("core/base.css");
+@import url("core/animations.css");
+@import url("core/utilities.css");
 
-Master Stylesheet
+/* ---------- SECTIONS ---------- */
 
-======================================
+@import url("sections/navbar.css");
+@import url("sections/hero.css");
+@import url("sections/gallery.css");
+@import url("sections/reviews.css");
+@import url("sections/pricing.css");
+@import url("sections/services.css");
+@import url("sections/process.css");
+@import url("sections/form.css");
+@import url("sections/faq.css");
+@import url("sections/footer.css");
 
-*/
-
-@import url("variables.css");
-
-@import url("base.css");
-
-/* These files will be added next */
-
-@import url("navbar.css");
-
-@import url("hero.css");
-
-@import url("gallery.css");
+/* ---------- RESPONSIVE ---------- */
 
 @import url("responsive.css");
