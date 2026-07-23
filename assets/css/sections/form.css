@@ -1,1 +1,289 @@
+/* ==========================================
+   INSTANT QUOTE
+========================================== */
 
+.quote-section{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(157,255,0,.05),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(255,49,49,.04),
+        transparent 35%),
+
+        #060606;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.quote-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+/* ==========================================
+   LEFT COLUMN
+========================================== */
+
+.quote-info{
+
+    padding-top:20px;
+
+}
+
+.quote-details{
+
+    margin-top:45px;
+
+    display:grid;
+
+    gap:28px;
+
+}
+
+.quote-details h4{
+
+    color:var(--lime);
+
+    margin-bottom:8px;
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.quote-details p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.quote-form-card{
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:42px;
+
+    box-shadow:
+
+        0 30px 70px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.quote-form-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+.quote-form-card input,
+.quote-form-card textarea{
+
+    width:100%;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:18px 20px;
+
+    color:white;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:
+
+        border-color .25s ease,
+
+        box-shadow .25s ease,
+
+        background .25s ease;
+
+}
+
+.quote-form-card input::placeholder,
+.quote-form-card textarea::placeholder{
+
+    color:#a5a5a5;
+
+}
+
+.quote-form-card textarea{
+
+    resize:vertical;
+
+    min-height:150px;
+
+}
+
+.quote-form-card input:focus,
+.quote-form-card textarea:focus{
+
+    border-color:var(--lime);
+
+    box-shadow:
+
+        0 0 0 4px rgba(157,255,0,.10);
+
+    background:#1d1d1d;
+
+}
+
+/* ==========================================
+   FILE UPLOAD
+========================================== */
+
+.upload-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:140px;
+
+    border:2px dashed rgba(157,255,0,.35);
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    transition:
+
+        border-color .25s ease,
+
+        background .25s ease;
+
+}
+
+.upload-box:hover{
+
+    background:rgba(157,255,0,.03);
+
+    border-color:var(--lime);
+
+}
+
+.upload-box input{
+
+    display:none;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.quote-form-card .primary-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1000px){
+
+    .quote-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .quote-section{
+
+        padding:100px 0;
+
+    }
+
+    .quote-form-card{
+
+        padding:30px;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .upload-box{
+
+        min-height:110px;
+
+        padding:20px;
+
+    }
+
+}
